@@ -2,6 +2,6 @@
     "code-runner.runInTerminal": true,
     "code-runner.preserveFocus": false,
     "code-runner.executorMap": {
-           "cpp": "cd $dir; if ($?) { g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" }; if ($?) { & \"$dir$fileNameWithoutExt.exe\" }"
+           "cpp": "g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\"; if ($?) { & \".\\$fileNameWithoutExt.exe\" }"
     }
 }
